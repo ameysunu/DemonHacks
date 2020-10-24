@@ -20,17 +20,59 @@ class _IntroductionState extends State<Introduction> {
               Container(
                 height: MediaQuery.of(context).size.height * 0.2,
                 width: MediaQuery.of(context).size.width * 1,
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.2,
+                width: MediaQuery.of(context).size.width * 1,
                 decoration: BoxDecoration(
                     color: HexColor('#E0E0E0'),
                     border: Border.all(color: HexColor('#EAAD13'))),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Container(
+                        height: 30, child: Image.asset('images/design.png')),
                     Text(
                       "Buy the best jewelry for yourself",
-                      style: TextStyle(color: HexColor('#EBAF76')),
+                      style: TextStyle(
+                          color: HexColor('#EBAF76'),
+                          fontFamily: 'Pacifico',
+                          fontSize: 25),
                     ),
                   ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20.0),
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.3,
+                  width: MediaQuery.of(context).size.width * 1,
+                  child: CircleAvatar(
+                    radius: 10,
+                    backgroundColor: HexColor('#EBAF76'),
+                    child: CircleAvatar(
+                      radius: 118,
+                      backgroundColor: Colors.white,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Get\nStarted",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 30,
+                                fontFamily: 'SairaCondensed'),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10.0),
+                            child: Container(
+                                height: 30,
+                                child: Image.asset('images/design1.png')),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ],
