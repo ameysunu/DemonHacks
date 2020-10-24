@@ -1,3 +1,4 @@
+import 'package:demonhacks/pages/ar/necklacear.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -57,12 +58,61 @@ class _NecklaceState extends State<Necklace> {
                   ),
                 ),
               ),
-              Container(
-                height: MediaQuery.of(context).size.height * 0.15,
-                width: MediaQuery.of(context).size.width * 1,
-                decoration: BoxDecoration(
-                    color: Colors.black,
-                    border: Border.all(color: HexColor('#FCBA6D'))),
+              InkWell(
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.15,
+                  width: MediaQuery.of(context).size.width * 1,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      border: Border.all(color: HexColor('#FCBA6D'))),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Container(
+                          height: 100,
+                          width: 100,
+                          child: Image.asset('images/objects/necklace1.png'),
+                        ),
+                      ),
+                      Container(
+                        height: MediaQuery.of(context).size.height * 0.9,
+                        width: MediaQuery.of(context).size.width * 0.6,
+                        child: Center(
+                          child: Text(
+                            'Limited Edition Necklace made with Elephant Tusk',
+                            style: TextStyle(
+                                fontFamily: 'Pacifico',
+                                color: HexColor('#FCBA6D'),
+                                fontSize: 20),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 10.0),
+                        child: Container(
+                          height: 10,
+                          width: 10,
+                          child: Center(
+                            child: IconButton(
+                              icon: Icon(
+                                Icons.qr_code,
+                                color: Colors.white,
+                              ),
+                              onPressed: null,
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => NecklaceAR()),
+                  );
+                },
               ),
               Container(
                 height: MediaQuery.of(context).size.height * 0.15,
@@ -70,6 +120,47 @@ class _NecklaceState extends State<Necklace> {
                 decoration: BoxDecoration(
                     color: Colors.black,
                     border: Border.all(color: HexColor('#FCBA6D'))),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        child: Image.asset('images/objects/necklace2.png'),
+                      ),
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.9,
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      child: Center(
+                        child: Text(
+                          'Hawaii inspired Lei Necklace',
+                          style: TextStyle(
+                              fontFamily: 'Pacifico',
+                              color: HexColor('#FCBA6D'),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10.0),
+                      child: Container(
+                        height: 10,
+                        width: 10,
+                        child: Center(
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.qr_code,
+                              color: Colors.white,
+                            ),
+                            onPressed: null,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: MediaQuery.of(context).size.height * 0.15,
@@ -77,6 +168,47 @@ class _NecklaceState extends State<Necklace> {
                 decoration: BoxDecoration(
                     color: Colors.black,
                     border: Border.all(color: HexColor('#FCBA6D'))),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        child: Image.asset('images/objects/necklace3.png'),
+                      ),
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.9,
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      child: Center(
+                        child: Text(
+                          'Freshwater Pearl Necklace',
+                          style: TextStyle(
+                              fontFamily: 'Pacifico',
+                              color: HexColor('#FCBA6D'),
+                              fontSize: 20),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10.0),
+                      child: Container(
+                        height: 10,
+                        width: 10,
+                        child: Center(
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.qr_code,
+                              color: Colors.white,
+                            ),
+                            onPressed: null,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: MediaQuery.of(context).size.height * 0.2,
