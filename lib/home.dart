@@ -124,6 +124,17 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: HexColor('#EBBF97'),
+        child: Icon(
+          Icons.logout,
+          color: HexColor('#282222'),
+        ),
+        onPressed: () {
+          signOutGoogle();
+          Navigator.pop(context);
+        },
+      ),
     );
   }
 }

@@ -36,10 +36,13 @@ Future<String> signInWithGoogle() async {
     assert(user.displayName != null);
     assert(user.photoURL != null);
 
-    // Store the retrieved data
     name = user.displayName;
     email = user.email;
     imageUrl = user.photoURL;
+
+    if (name.contains(" ")) {
+      name = name.substring(0, name.indexOf(" "));
+    }
 
     final User currentUser = _auth.currentUser;
     assert(user.uid == currentUser.uid);
@@ -73,70 +76,105 @@ class _LoginState extends State<Login> {
           child: Column(
             children: [
               Container(
-                height: MediaQuery.of(context).size.height * 0.2,
+                height: MediaQuery.of(context).size.height * 0.01,
                 width: MediaQuery.of(context).size.width * 1,
               ),
-              Container(
-                height: MediaQuery.of(context).size.height * 0.5,
-                width: MediaQuery.of(context).size.width * 1,
-                decoration: BoxDecoration(
-                    color: HexColor('#4A4848'),
-                    border: Border.all(color: HexColor('#EAAD13'))),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Login",
-                      style: TextStyle(
-                        fontFamily: 'Pacifico',
-                        fontSize: 30,
-                        color: HexColor('#EBAF76'),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Container(
+                  height: 40,
+                  width: 100,
+                  child: Image.asset('images/designwhite.png'),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 20.0, left: 10, right: 10),
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.2,
+                  width: MediaQuery.of(context).size.width * 1,
+                  decoration: BoxDecoration(
+                      color: HexColor('#E0E0E0'),
+                      border: Border.all(color: HexColor('#EAAD13'))),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                          height: 30, child: Image.asset('images/design.png')),
+                      Text(
+                        "Buy the best jewelry for yourself",
+                        style: TextStyle(
+                            color: HexColor('#EBAF76'),
+                            fontFamily: 'Pacifico',
+                            fontSize: 25),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(10.0, 30, 10, 10),
-                      child: RaisedButton(
-                        color: HexColor('#B3B1B1'),
-                        child: Container(
-                          height: 50,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(10.0),
-                                child: Container(
-                                  height: 25,
-                                  width: 25,
-                                  child: Image.asset("images/google.png"),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10.0, left: 10, right: 10),
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.5,
+                  width: MediaQuery.of(context).size.width * 1,
+                  decoration: BoxDecoration(
+                      color: HexColor('#4A4848'),
+                      border: Border.all(color: HexColor('#EAAD13'))),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Login",
+                        style: TextStyle(
+                          fontFamily: 'Pacifico',
+                          fontSize: 30,
+                          color: HexColor('#EBAF76'),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(10.0, 30, 10, 10),
+                        child: RaisedButton(
+                          color: HexColor('#282222'),
+                          child: Container(
+                            height: 50,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Container(
+                                    height: 25,
+                                    width: 25,
+                                    child: Image.asset("images/google.png"),
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                "Sign in with Google",
-                                style: TextStyle(
-                                    color: HexColor('#333333'), fontSize: 18),
-                              ),
-                            ],
+                                Text(
+                                  "Sign in with Google",
+                                  style: TextStyle(
+                                      color: HexColor('#EBBF97'), fontSize: 18),
+                                ),
+                              ],
+                            ),
                           ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          onPressed: () {
+                            signInWithGoogle().then((result) {
+                              if (result != null) {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return Home();
+                                    },
+                                  ),
+                                );
+                              }
+                            });
+                          },
                         ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        onPressed: () {
-                          signInWithGoogle().then((result) {
-                            if (result != null) {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) {
-                                    return Home();
-                                  },
-                                ),
-                              );
-                            }
-                          });
-                        },
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Padding(
