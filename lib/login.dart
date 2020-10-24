@@ -86,14 +86,6 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               ),
-              // Padding(
-              //   padding: const EdgeInsets.all(10.0),
-              //   child: Container(
-              //     height: 40,
-              //     width: 100,
-              //     child: Image.asset('images/designwhite.png'),
-              //   ),
-              // ),
               Padding(
                 padding: const EdgeInsets.only(top: 20.0, left: 10, right: 10),
                 child: Container(

@@ -1,4 +1,6 @@
 import 'package:demonhacks/login.dart';
+import 'package:demonhacks/pages/earrings.dart';
+import 'package:demonhacks/pages/necklace.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -72,7 +74,10 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                     onPressed: () {
-                      null;
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Earrings()),
+                      );
                     },
                   ),
                 ),
@@ -102,7 +107,10 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                     onPressed: () {
-                      null;
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Necklace()),
+                      );
                     },
                   ),
                 ),
