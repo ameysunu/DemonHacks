@@ -1,3 +1,4 @@
+import 'package:demonhacks/login.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -67,7 +68,10 @@ class _IntroductionState extends State<Introduction> {
                           ],
                         ),
                         onTap: () {
-                          null;
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Login()),
+                          );
                         },
                       ),
                     ),
