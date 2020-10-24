@@ -53,23 +53,22 @@ class _IntroductionState extends State<Introduction> {
                     child: CircleAvatar(
                       radius: 118,
                       backgroundColor: Colors.white,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Get\nStarted",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 30,
-                                fontFamily: 'SairaCondensed'),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 10.0),
-                            child: Container(
-                                height: 30,
-                                child: Image.asset('images/design1.png')),
-                          ),
-                        ],
+                      child: InkWell(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Get\nStarted",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 30,
+                                  fontFamily: 'SairaCondensed'),
+                            ),
+                          ],
+                        ),
+                        onTap: () {
+                          null;
+                        },
                       ),
                     ),
                   ),
