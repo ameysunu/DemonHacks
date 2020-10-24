@@ -77,7 +77,7 @@ class _LoginState extends State<Login> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                height: MediaQuery.of(context).size.height * 0.1,
+                height: MediaQuery.of(context).size.height * 0.13,
                 width: MediaQuery.of(context).size.width * 1,
                 child: Align(
                   alignment: Alignment.topLeft,
