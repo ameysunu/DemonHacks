@@ -74,6 +74,10 @@ flutter:
       fonts:
         - asset: fonts/SairaCondensed-Medium.ttf
 
+    - family: RougeScript
+      fonts:
+        - asset: fonts/RougeScript-Regular.ttf
+
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

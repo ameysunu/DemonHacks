@@ -38,9 +38,10 @@ class _EarringsState extends State<Earrings> {
                         child: Text(
                           "Search",
                           style: TextStyle(
-                              fontFamily: 'Pacifico',
+                              fontFamily: 'RougeScript',
                               color: HexColor('#FCBA6D'),
-                              fontSize: 30),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 40),
                         ),
                       ),
                       Padding(
@@ -48,9 +49,10 @@ class _EarringsState extends State<Earrings> {
                         child: Text(
                           "Filter",
                           style: TextStyle(
-                              fontFamily: 'Pacifico',
+                              fontFamily: 'RougeScript',
                               color: HexColor('#FCBA6D'),
-                              fontSize: 30),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 40),
                         ),
                       ),
                     ],

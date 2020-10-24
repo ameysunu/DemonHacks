@@ -25,9 +25,12 @@ class _HomeState extends State<Home> {
         elevation: 3,
         automaticallyImplyLeading: false,
         title: Text(
-          "Welcome $name",
+          "Welcome!",
           style: TextStyle(
-              fontFamily: 'Pacifico', fontSize: 20, color: HexColor('#EBBF97')),
+              fontFamily: 'RougeScript',
+              fontSize: 30,
+              fontWeight: FontWeight.w600,
+              color: HexColor('#EBBF97')),
         ),
       ),
       backgroundColor: HexColor('#333333'),
@@ -67,8 +70,9 @@ class _HomeState extends State<Home> {
                         Text(
                           "Earrings",
                           style: TextStyle(
-                              fontFamily: 'Pacifico',
-                              fontSize: 20,
+                              fontFamily: 'RougeScript',
+                              fontWeight: FontWeight.w600,
+                              fontSize: 25,
                               color: HexColor('#EBBF97')),
                         ),
                       ],
@@ -100,8 +104,9 @@ class _HomeState extends State<Home> {
                         Text(
                           "Necklaces",
                           style: TextStyle(
-                              fontFamily: 'Pacifico',
-                              fontSize: 20,
+                              fontFamily: 'RougeScript',
+                              fontSize: 25,
+                              fontWeight: FontWeight.w600,
                               color: HexColor('#EBBF97')),
                         ),
                       ],

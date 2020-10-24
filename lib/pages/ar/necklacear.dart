@@ -42,7 +42,10 @@ class _NecklaceARState extends State<NecklaceAR> {
         title: Text(
           "Necklace AR",
           style: TextStyle(
-              fontFamily: 'Pacifico', fontSize: 20, color: HexColor('#EBBF97')),
+              fontFamily: 'Pacifico',
+              fontSize: 25,
+              fontWeight: FontWeight.w600,
+              color: HexColor('#EBBF97')),
         ),
       ),
       body: Stack(
@@ -66,6 +69,8 @@ class _NecklaceARState extends State<NecklaceAR> {
                     child: Text("Zoom:",
                         style: TextStyle(
                             fontFamily: 'Pacifico',
+                            fontWeight: FontWeight.w600,
+                            fontSize: 20,
                             color: HexColor('#EBBF97'))),
                   ),
                   Slider(

@@ -37,7 +37,7 @@ class _IntroductionState extends State<Introduction> {
                       "Buy the best jewelry for yourself",
                       style: TextStyle(
                           color: HexColor('#EBAF76'),
-                          fontFamily: 'Pacifico',
+                          fontFamily: 'RougeScript',
                           fontSize: 25),
                     ),
                   ],

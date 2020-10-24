@@ -103,7 +103,8 @@ class _LoginState extends State<Login> {
                         "Buy the best jewelry for yourself",
                         style: TextStyle(
                             color: HexColor('#EBAF76'),
-                            fontFamily: 'Pacifico',
+                            fontFamily: 'RougeScript',
+                            fontWeight: FontWeight.w600,
                             fontSize: 25),
                       ),
                     ],
@@ -124,8 +125,9 @@ class _LoginState extends State<Login> {
                       Text(
                         "Login",
                         style: TextStyle(
-                          fontFamily: 'Pacifico',
-                          fontSize: 30,
+                          fontFamily: 'RougeScript',
+                          fontSize: 40,
+                          fontWeight: FontWeight.w600,
                           color: HexColor('#EBAF76'),
                         ),
                       ),

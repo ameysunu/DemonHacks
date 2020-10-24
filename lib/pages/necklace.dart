@@ -39,9 +39,10 @@ class _NecklaceState extends State<Necklace> {
                         child: Text(
                           "Search",
                           style: TextStyle(
-                              fontFamily: 'Pacifico',
+                              fontFamily: 'RougeScript',
+                              fontWeight: FontWeight.w600,
                               color: HexColor('#FCBA6D'),
-                              fontSize: 30),
+                              fontSize: 40),
                         ),
                       ),
                       Padding(
@@ -49,9 +50,10 @@ class _NecklaceState extends State<Necklace> {
                         child: Text(
                           "Filter",
                           style: TextStyle(
-                              fontFamily: 'Pacifico',
+                              fontFamily: 'RougeScript',
                               color: HexColor('#FCBA6D'),
-                              fontSize: 30),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 40),
                         ),
                       ),
                     ],
@@ -82,9 +84,10 @@ class _NecklaceState extends State<Necklace> {
                           child: Text(
                             'Limited Edition Necklace made with Elephant Tusk',
                             style: TextStyle(
-                                fontFamily: 'Pacifico',
+                                fontFamily: 'RougeScript',
+                                fontWeight: FontWeight.w600,
                                 color: HexColor('#FCBA6D'),
-                                fontSize: 20),
+                                fontSize: 25),
                           ),
                         ),
                       ),
@@ -137,9 +140,10 @@ class _NecklaceState extends State<Necklace> {
                         child: Text(
                           'Hawaii inspired Lei Necklace',
                           style: TextStyle(
-                              fontFamily: 'Pacifico',
+                              fontFamily: 'RougeScript',
+                              fontWeight: FontWeight.w600,
                               color: HexColor('#FCBA6D'),
-                              fontSize: 20),
+                              fontSize: 25),
                         ),
                       ),
                     ),
@@ -185,9 +189,10 @@ class _NecklaceState extends State<Necklace> {
                         child: Text(
                           'Freshwater Pearl Necklace',
                           style: TextStyle(
-                              fontFamily: 'Pacifico',
+                              fontFamily: 'RougeScript',
+                              fontWeight: FontWeight.w600,
                               color: HexColor('#FCBA6D'),
-                              fontSize: 20),
+                              fontSize: 25),
                         ),
                       ),
                     ),
