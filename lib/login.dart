@@ -74,19 +74,26 @@ class _LoginState extends State<Login> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-                height: MediaQuery.of(context).size.height * 0.01,
+                height: MediaQuery.of(context).size.height * 0.1,
                 width: MediaQuery.of(context).size.width * 1,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Container(
-                  height: 40,
-                  width: 100,
-                  child: Image.asset('images/designwhite.png'),
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: Container(
+                    child: Image.asset('images/top design.png'),
+                  ),
                 ),
               ),
+              // Padding(
+              //   padding: const EdgeInsets.all(10.0),
+              //   child: Container(
+              //     height: 40,
+              //     width: 100,
+              //     child: Image.asset('images/designwhite.png'),
+              //   ),
+              // ),
               Padding(
                 padding: const EdgeInsets.only(top: 20.0, left: 10, right: 10),
                 child: Container(
