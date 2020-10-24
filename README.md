@@ -1,4 +1,5 @@
 # demonhacks
+[![Build Status](https://dev.azure.com/ameypsunu2017/DemonHacks/_apis/build/status/ameysunu.DemonHacks?branchName=master)](https://dev.azure.com/ameypsunu2017/DemonHacks/_build/latest?definitionId=17&branchName=master)
 
 A new Flutter project.
 
