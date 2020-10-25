@@ -1,3 +1,4 @@
+import 'package:demonhacks/pages/ar/necklacear.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -56,7 +57,10 @@ class _NeckIntroState extends State<NeckIntro> {
                     ],
                   ),
                   onPressed: () {
-                    null;
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => NecklaceAR()),
+                    );
                   },
                 ),
               ),
