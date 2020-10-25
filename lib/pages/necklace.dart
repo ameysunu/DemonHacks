@@ -1,4 +1,5 @@
 import 'package:demonhacks/pages/ar/necklacear.dart';
+import 'package:demonhacks/pages/neckintro.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -91,29 +92,13 @@ class _NecklaceState extends State<Necklace> {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 10.0),
-                        child: Container(
-                          height: 10,
-                          width: 10,
-                          child: Center(
-                            child: IconButton(
-                              icon: Icon(
-                                Icons.qr_code,
-                                color: Colors.white,
-                              ),
-                              onPressed: null,
-                            ),
-                          ),
-                        ),
-                      )
                     ],
                   ),
                 ),
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => NecklaceAR()),
+                    MaterialPageRoute(builder: (context) => NeckIntro()),
                   );
                 },
               ),
@@ -147,22 +132,6 @@ class _NecklaceState extends State<Necklace> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10.0),
-                      child: Container(
-                        height: 10,
-                        width: 10,
-                        child: Center(
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.qr_code,
-                              color: Colors.white,
-                            ),
-                            onPressed: null,
-                          ),
-                        ),
-                      ),
-                    )
                   ],
                 ),
               ),
@@ -196,22 +165,6 @@ class _NecklaceState extends State<Necklace> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10.0),
-                      child: Container(
-                        height: 10,
-                        width: 10,
-                        child: Center(
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.qr_code,
-                              color: Colors.white,
-                            ),
-                            onPressed: null,
-                          ),
-                        ),
-                      ),
-                    )
                   ],
                 ),
               ),

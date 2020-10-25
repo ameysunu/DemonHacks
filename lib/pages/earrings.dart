@@ -1,3 +1,4 @@
+import 'package:demonhacks/pages/ar/earringar.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -59,12 +60,20 @@ class _EarringsState extends State<Earrings> {
                   ),
                 ),
               ),
-              Container(
-                height: MediaQuery.of(context).size.height * 0.15,
-                width: MediaQuery.of(context).size.width * 1,
-                decoration: BoxDecoration(
-                    color: Colors.black,
-                    border: Border.all(color: HexColor('#FCBA6D'))),
+              InkWell(
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.15,
+                  width: MediaQuery.of(context).size.width * 1,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      border: Border.all(color: HexColor('#FCBA6D'))),
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => EarringAR()),
+                  );
+                },
               ),
               Container(
                 height: MediaQuery.of(context).size.height * 0.15,

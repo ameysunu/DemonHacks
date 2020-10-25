@@ -3,17 +3,17 @@ import 'package:flutter_unity/flutter_unity.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:http/http.dart' as http;
 
-class NecklaceAR extends StatefulWidget {
+class EarringAR extends StatefulWidget {
   @override
-  _NecklaceARState createState() => _NecklaceARState();
+  _EarringARState createState() => _EarringARState();
 }
 
-class _NecklaceARState extends State<NecklaceAR> {
+class _EarringARState extends State<EarringAR> {
   UnityViewController unityViewController;
 
   double _sliderValue = 1.0;
   String _projectKey = 'odd-moon-9343';
-  String _entryID = '74ebfbf2-ddb5-46aa-be9c-361f073d3a12';
+  String _entryID = 'f136e668-1627-4313-8e48-bce813424504';
 
   @override
   void initState() {
@@ -40,7 +40,7 @@ class _NecklaceARState extends State<NecklaceAR> {
         elevation: 3,
         automaticallyImplyLeading: false,
         title: Text(
-          "Necklace AR",
+          "Earring AR",
           style: TextStyle(
               fontFamily: 'Pacifico',
               fontSize: 25,
