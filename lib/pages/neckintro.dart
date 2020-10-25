@@ -1,6 +1,7 @@
 import 'package:demonhacks/pages/ar/necklacear.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class NeckIntro extends StatefulWidget {
   @override
@@ -87,7 +88,7 @@ class _NeckIntroState extends State<NeckIntro> {
                     ],
                   ),
                   onPressed: () {
-                    null;
+                    _launchURL();
                   },
                 ),
               ),
@@ -105,5 +106,14 @@ class _NeckIntroState extends State<NeckIntro> {
         ),
       ),
     );
+  }
+}
+
+_launchURL() async {
+  const url = 'https://go.echoar.xyz/N9MC';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
