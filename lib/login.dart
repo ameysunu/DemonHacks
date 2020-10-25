@@ -160,17 +160,17 @@ class _LoginState extends State<Login> {
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           onPressed: () {
-                            // signInWithGoogle().then((result) {
-                            //   if (result != null) {
-                            //     Navigator.of(context).push(
-                            //       MaterialPageRoute(
-                            //         builder: (context) {
-                            //           return Home();
-                            //         },
-                            //       ),
-                            //     );
-                            //   }
-                            // });
+                            signInWithGoogle().then((result) {
+                              if (result != null) {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return Home();
+                                    },
+                                  ),
+                                );
+                              }
+                            });
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) => Home()),

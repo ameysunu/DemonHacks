@@ -144,7 +144,7 @@ class _HomeState extends State<Home> {
           color: HexColor('#282222'),
         ),
         onPressed: () {
-          //signOutGoogle();
+          signOutGoogle();
           Navigator.pop(context);
         },
       ),
