@@ -123,7 +123,7 @@ class _NecklaceState extends State<Necklace> {
                       width: MediaQuery.of(context).size.width * 0.6,
                       child: Center(
                         child: Text(
-                          'Hawaii inspired Lei Necklace',
+                          'Simple Golden inspired Wogly Necklace',
                           style: TextStyle(
                               fontFamily: 'RougeScript',
                               fontWeight: FontWeight.w600,
