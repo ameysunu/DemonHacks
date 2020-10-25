@@ -1,3 +1,4 @@
+import 'package:demonhacks/pages/ar/earringar.dart';
 import 'package:demonhacks/pages/ar/necklacear.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -28,11 +29,14 @@ class _EarIntroState extends State<EarIntro> {
               ),
             ),
             Center(
-              child: Container(
-                height: MediaQuery.of(context).size.height * 0.3,
-                width: MediaQuery.of(context).size.width * 1,
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
                 child: Container(
-                  child: Image.asset('images/objects/man_neck.png'),
+                  height: MediaQuery.of(context).size.height * 0.25,
+                  width: MediaQuery.of(context).size.width * 1,
+                  child: Container(
+                    child: Image.asset('images/objects/man_ear.png'),
+                  ),
                 ),
               ),
             ),
@@ -60,7 +64,7 @@ class _EarIntroState extends State<EarIntro> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => NecklaceAR()),
+                      MaterialPageRoute(builder: (context) => EarringAR()),
                     );
                   },
                 ),
@@ -110,7 +114,7 @@ class _EarIntroState extends State<EarIntro> {
 }
 
 _launchURL() async {
-  const url = 'https://go.echoar.xyz/N9MC';
+  const url = 'https://go.echoar.xyz/YNVD';
   if (await canLaunch(url)) {
     await launch(url);
   } else {

@@ -1,4 +1,5 @@
 import 'package:demonhacks/pages/ar/earringar.dart';
+import 'package:demonhacks/pages/earintro.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -97,7 +98,7 @@ class _EarringsState extends State<Earrings> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => EarringAR()),
+                    MaterialPageRoute(builder: (context) => EarIntro()),
                   );
                 },
               ),
