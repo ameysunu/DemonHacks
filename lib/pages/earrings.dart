@@ -83,7 +83,7 @@ class _EarringsState extends State<Earrings> {
                         width: MediaQuery.of(context).size.width * 0.6,
                         child: Center(
                           child: Text(
-                            'Simple beautiful loop earrings',
+                            'Simple single pearl studded earrings',
                             style: TextStyle(
                                 fontFamily: 'RougeScript',
                                 fontWeight: FontWeight.w600,
