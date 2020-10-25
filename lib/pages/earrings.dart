@@ -67,6 +67,32 @@ class _EarringsState extends State<Earrings> {
                   decoration: BoxDecoration(
                       color: Colors.black,
                       border: Border.all(color: HexColor('#FCBA6D'))),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Container(
+                          height: 100,
+                          width: 100,
+                          child: Image.asset('images/objects/earr1.png'),
+                        ),
+                      ),
+                      Container(
+                        height: MediaQuery.of(context).size.height * 0.9,
+                        width: MediaQuery.of(context).size.width * 0.6,
+                        child: Center(
+                          child: Text(
+                            'Simple beautiful loop earrings',
+                            style: TextStyle(
+                                fontFamily: 'RougeScript',
+                                fontWeight: FontWeight.w600,
+                                color: HexColor('#FCBA6D'),
+                                fontSize: 25),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 onTap: () {
                   Navigator.push(
@@ -81,6 +107,32 @@ class _EarringsState extends State<Earrings> {
                 decoration: BoxDecoration(
                     color: Colors.black,
                     border: Border.all(color: HexColor('#FCBA6D'))),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        child: Image.asset('images/objects/earr2.png'),
+                      ),
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.9,
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      child: Center(
+                        child: Text(
+                          'Diamond and gold encrusted lively rings',
+                          style: TextStyle(
+                              fontFamily: 'RougeScript',
+                              fontWeight: FontWeight.w600,
+                              color: HexColor('#FCBA6D'),
+                              fontSize: 25),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
                 height: MediaQuery.of(context).size.height * 0.15,
@@ -88,6 +140,32 @@ class _EarringsState extends State<Earrings> {
                 decoration: BoxDecoration(
                     color: Colors.black,
                     border: Border.all(color: HexColor('#FCBA6D'))),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        child: Image.asset('images/objects/earr3.png'),
+                      ),
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.9,
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      child: Center(
+                        child: Text(
+                          'Platinum Rouge cranked with gold plating',
+                          style: TextStyle(
+                              fontFamily: 'RougeScript',
+                              fontWeight: FontWeight.w600,
+                              color: HexColor('#FCBA6D'),
+                              fontSize: 25),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
                 height: MediaQuery.of(context).size.height * 0.2,

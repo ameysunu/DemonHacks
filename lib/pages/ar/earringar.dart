@@ -12,8 +12,8 @@ class _EarringARState extends State<EarringAR> {
   UnityViewController unityViewController;
 
   double _sliderValue = 1.0;
-  String _projectKey = 'odd-moon-9343';
-  String _entryID = 'f136e668-1627-4313-8e48-bce813424504';
+  String _projectKey = 'odd-surf-9217';
+  String _entryID = '69e87c70-0a34-45ee-870b-d2286e8dd233';
 
   @override
   void initState() {
