@@ -1,4 +1,4 @@
-import 'package:demonhacks/pages/ar/earringar.dart';
+import 'package:demonhacks/pages/necklace.dart';
 import 'package:demonhacks/pages/earintro.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -180,7 +180,12 @@ class _EarringsState extends State<Earrings> {
                     ),
                     IconButton(
                       icon: Icon(Icons.arrow_right, color: HexColor('#FCBA6D')),
-                      onPressed: null,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Necklace()),
+                        );
+                      },
                     ),
                   ],
                 ),

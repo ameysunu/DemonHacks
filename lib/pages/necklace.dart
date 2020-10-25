@@ -1,4 +1,5 @@
 import 'package:demonhacks/pages/ar/necklacear.dart';
+import 'package:demonhacks/pages/earrings.dart';
 import 'package:demonhacks/pages/neckintro.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -176,7 +177,12 @@ class _NecklaceState extends State<Necklace> {
                   children: [
                     IconButton(
                       icon: Icon(Icons.arrow_left, color: HexColor('#FCBA6D')),
-                      onPressed: null,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Earrings()),
+                        );
+                      },
                     ),
                     IconButton(
                       icon: Icon(Icons.arrow_right, color: HexColor('#FCBA6D')),
