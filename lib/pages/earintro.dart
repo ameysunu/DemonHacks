@@ -114,7 +114,7 @@ class _EarIntroState extends State<EarIntro> {
 }
 
 _launchURL() async {
-  const url = 'https://go.echoar.xyz/YNVD';
+  const url = 'https://go.echoar.xyz/gcrh';
   if (await canLaunch(url)) {
     await launch(url);
   } else {

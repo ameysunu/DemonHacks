@@ -13,7 +13,7 @@ class _EarringARState extends State<EarringAR> {
 
   double _sliderValue = 1.0;
   String _projectKey = 'odd-surf-9217';
-  String _entryID = '69e87c70-0a34-45ee-870b-d2286e8dd233';
+  String _entryID = 'e3bac17c-62ad-4ff8-ae5c-d7d69ad5bec1';
 
   @override
   void initState() {
